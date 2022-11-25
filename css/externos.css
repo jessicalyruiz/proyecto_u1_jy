@@ -1,13 +1,37 @@
-h1{
+/*
+*{
+    background-color: black;
+}*/
+
+
+h1,
+h6{
     color: aqua; 
     background-color: darksalmon;
 }
+/*identificadir*/
 #id_titulo4{
     color: rgb(88, 219, 94); 
     background-color: rgb(47, 104, 72);
 }
+/*
+p{
+    color: white;
+}*/
 
+/*clase*/
 .subtitulo{
     color: rgb(233, 144, 206); 
     background-color: rgb(243, 40, 152);
 }
+/*atributo*/
+img[src*="unicorn"]{
+    width: 20px;
+    height: 20px;
+}
+
+/*pseudoclase o evento*/
+label :hover{
+    color:aqua;
+}
+

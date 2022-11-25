@@ -1,0 +1,24 @@
+h1{
+    font-size: 40px;
+    font-family: sans-serif;
+}
+/*a los elementos principles*/
+header, section,footer, aside, nav, article{
+    display: block;
+}
+
+body{
+    text-align: center;
+}
+
+.cabecera{
+    background: white;
+    border:1px solid aquamarine;
+    padding: 20px;
+}
+/*cuand quiero hacer combinaciones : con espacio y el elemento, es anidacion de estilos para elementps*/
+
+.cabecera h1{
+    text-align: left;
+}
+
