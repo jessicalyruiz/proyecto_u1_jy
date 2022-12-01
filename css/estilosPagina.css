@@ -22,3 +22,43 @@ body{
     text-align: left;
 }
 
+
+.menu li{
+    list-style: none;
+    display: inline-block;
+    border: 1px solid darkgrey;
+    margin: 5px;
+    padding: 7px;
+}
+.menu {
+    background: burlywood;
+    border: 1px solid violet;
+    text-align: center;
+} 
+
+.formulario{
+    width: 900px;
+    border: 2px solid black;
+    margin: 15px auto;
+    background-color: aquamarine;
+}
+.referencias{
+    border: 1px solid black;
+    margin: 20px;
+    float: left;
+}
+article{
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 4px;
+    margin-bottom: 25px;
+}
+.footerfin{
+    text-align: right;
+}
+
+article footer{
+    text-align: right;
+}
+
+
