@@ -43,9 +43,10 @@ body{
     background-color: aquamarine;
 }
 .referencias{
-    border: 1px solid black;
+    width: 300px;
     margin: 20px;
     float: left;
+    border: 2px solid black;
 }
 article{
     border: 1px solid black;
@@ -61,4 +62,14 @@ article footer{
     text-align: right;
 }
 
+.seccion{
+    float: left;
+    margin: 20px;
+    width: 500px;
+}
+img{
+    width: 60px;
+    display: block;
+    margin: 20px auto;
+}
 
