@@ -44,9 +44,9 @@ body{
 }
 .referencias{
     width: 300px;
-    margin: 20px;
+    margin: 50px 1px;
     float: left;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
 }
 article{
     border: 1px solid black;
@@ -71,5 +71,11 @@ img{
     width: 60px;
     display: block;
     margin: 20px auto;
+}
+blockquote{
+    border: 1px solid black;
+    width: 200px;
+    margin: 10px auto 30px auto;
+    
 }
 
