@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="../css/calculadoraEstilos.css">
+    <script src="../js/calculadoraDeber.js"></script>
+</head>
+<body>
+    <div class="titulo"> 
+        <header>
+            <h1>Calculadora</h1>
+            
+
+        </header>
+    </div>
+    <div class="teclas">
+        <section >
+            <div class="pantalla">
+            <label id="num1" for="">numero1</label>
+            <label id="oper" for="">Operacion</label>
+            <label id="num2" for="">numero2</label>
+            <label id="ig" for="">=</label>
+            <label id="resul" for="">Resultado</label>
+        </div>
+            <br>
+            <button class="button" id="but7" onclick="
+                var n=document.getElementById('num1').innerHTML;
+                var m=document.getElementById('num2').innerHTML;
+                if(n==='numero1'){
+                    document.getElementById('num1').innerHTML= 7;
+                    }else if(m=='numero2'){
+                        document.getElementById('num2').innerHTML= 7;
+                        }"
+            >7</button>
+
+            <button class="button" id="but8" onclick="
+                var n=document.getElementById('num1').innerHTML;
+                var m=document.getElementById('num2').innerHTML;
+                if(n==='numero1'){
+                    document.getElementById('num1').innerHTML= 8;
+                    }else if(m=='numero2'){
+                        document.getElementById('num2').innerHTML= 8;
+                        }"
+            >8</button>
+
+            <button class="button" id="but9" onclick="
+                var n=document.getElementById('num1').innerHTML;
+                var m=document.getElementById('num2').innerHTML;
+                if(n==='numero1'){
+                    document.getElementById('num1').innerHTML= 9;
+                    }else if(m=='numero2'){
+                        document.getElementById('num2').innerHTML= 9;
+                        }"
+            >9</button>
+
+            <button class="button" id="butdiv" onclick="
+                var n=document.getElementById('oper').innerHTML;
+               
+                if(n==='Operacion'){
+                    document.getElementById('oper').innerHTML= '/';
+                    }"
+            >/</button>
+            <br>
+
+
+
+
+
+
+            <button class="button" id="but4" onclick="
+                var n=document.getElementById('num1').innerHTML;
+                var m=document.getElementById('num2').innerHTML;
+                if(n==='numero1'){
+                    document.getElementById('num1').innerHTML= 4;
+                    }else if(m=='numero2'){
+                        document.getElementById('num2').innerHTML= 4;
+                        }"
+            >4</button>
+
+            <button class="button" id="but5" onclick="
+                var n=document.getElementById('num1').innerHTML;
+                var m=document.getElementById('num2').innerHTML;
+                if(n==='numero1'){
+                    document.getElementById('num1').innerHTML= 5;
+                    }else if(m=='numero2'){
+                        document.getElementById('num2').innerHTML= 5;
+                        }"
+            >5</button>
+
+            <button class="button" id="but6" onclick="
+                var n=document.getElementById('num1').innerHTML;
+                var m=document.getElementById('num2').innerHTML;
+                if(n==='numero1'){
+                    document.getElementById('num1').innerHTML= 6;
+                    }else if(m=='numero2'){
+                        document.getElementById('num2').innerHTML= 6;
+                        }"
+            >6</button>
+
+            <button class="button" id="butmul" onclick="
+                var n=document.getElementById('oper').innerHTML;
+               
+                if(n==='Operacion'){
+                    document.getElementById('oper').innerHTML= '*';
+                    }"
+            >*</button>
+            <br>
+
+
+
+            
+            <button class="button" id="but1" onclick="
+                var n=document.getElementById('num1').innerHTML;
+                var m=document.getElementById('num2').innerHTML;
+                if(n==='numero1'){
+                    document.getElementById('num1').innerHTML= 1;
+                    }else if(m=='numero2'){
+                        document.getElementById('num2').innerHTML= 1;
+                        }"
+            >1</button>
+
+            <button class="button" id="but2" onclick="
+                var n=document.getElementById('num1').innerHTML;
+                var m=document.getElementById('num2').innerHTML;
+                if(n==='numero1'){
+                    document.getElementById('num1').innerHTML= 2;
+                    }else if(m=='numero2'){
+                        document.getElementById('num2').innerHTML= 2;
+                        }"
+            >2</button>
+
+            <button class="button" id="but3" onclick="
+                var n=document.getElementById('num1').innerHTML;
+                var m=document.getElementById('num2').innerHTML;
+                if(n==='numero1'){
+                    document.getElementById('num1').innerHTML= 3;
+                    }else if(m=='numero2'){
+                        document.getElementById('num2').innerHTML= 3;
+                        }"
+            >3</button>
+
+            <button class="button" id="butres" onclick="
+                var n=document.getElementById('oper').innerHTML;
+               
+                if(n==='Operacion'){
+                    document.getElementById('oper').innerHTML= '-';
+                    }"
+            >-</button>
+            <br>
+            <button class="button">.  </button>
+            <button class="button" id="but0" onclick="
+                var n=document.getElementById('num1').innerHTML;
+                var m=document.getElementById('num2').innerHTML;
+                if(n==='numero1'){
+                    document.getElementById('num1').innerHTML= 0;
+                    }else if(m=='numero2'){
+                        document.getElementById('num2').innerHTML= 0;
+                        }"
+            >0</button>
+            <button class="button">. </button>
+            <button class="button" id="butsuma" onclick="
+                var n=document.getElementById('oper').innerHTML;
+               
+                if(n==='Operacion'){
+                    document.getElementById('oper').innerHTML= '+';
+                    }"
+            >+</button>
+        </section>
+        <section>
+            <button class="result" onclick="
+                var opera=document.getElementById('oper').innerHTML;
+                if(opera==='+'){
+                    document.getElementById('resul').innerHTML=sumar(parseInt(document.getElementById('num1').innerHTML), parseInt(document.getElementById('num2').innerHTML));
+                }else if(opera==='-'){
+                    document.getElementById('resul').innerHTML=restar(parseInt(document.getElementById('num1').innerHTML), parseInt(document.getElementById('num2').innerHTML));
+                }else if(opera==='*'){
+                    document.getElementById('resul').innerHTML=multiplicar(parseInt(document.getElementById('num1').innerHTML), parseInt(document.getElementById('num2').innerHTML));
+                }else if(opera==='/'){
+                    document.getElementById('resul').innerHTML=dividir(parseInt(document.getElementById('num1').innerHTML), parseInt(document.getElementById('num2').innerHTML));
+                }" 
+                > Resultado</button>
+               <!-- <button onclick="document.getElementById('num1').innerHTML='numero1'; document.getElementById('num2').innerHTML='numero1';
+                                    document.getElementById('num1').innerHTML='numero2';
+                                    document.getElementById('oper').innerHTML='Operacion';
+                                    document.getElementById('resul').innerHTML='Resultado';">Reset</button>  -->
+                                    <a href="calculadora2.html"> Reset</a>
+        </section>
+
+    </div>
+</body>
+</html>
