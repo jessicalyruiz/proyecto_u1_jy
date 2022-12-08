@@ -5,6 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document j</title>
+
+    <script>
+
+
+function cambiarColor(){
+    document.getElementById('txt2').style.backgroundColor='yellow'
+}
+
+function sumar(num1, num2){
+    return num1+num2
+}
+
+function restar(n1,n2){
+    return n1-n2
+}
+    </script>
+    <script src="../js/funciones.js"></script>
 </head>
 <body>
     <header></header>
@@ -12,8 +29,40 @@
     <section>
         <label for="">Text 1 </label>
         <label id="txt2" for="">Text 2</label>
+        <img id="img1" src="../image/candy.jpg" alt="No existe imagen">
         <button onclick="document.getElementById('txt2').innerHTML='modific el texto'">Cambiar text</button>
         <button onclick="document.getElementById('txt2').style.backgroundColor='blue'">Cambiar color</button>
+        <button onclick="cambiarColor()">Cambiar color2</button>
+        <button onclick="document.getElementById('img1').src='../image/unicorn.jpg'">Cambiar Img</button>
+        <input id="pass1" type="password">
+        <button onclick="alert(document.getElementById('pass1').value)">Mostrar</button>
+        <button onclick="alert(sumar(3,5))">Sumar</button>
+        <input type="text" name="" id="numer1">
+        <input type="text" id="nume2">
+        <button onclick="alert(restar(document.getElementById('numer1').value,document.getElementById('nume2').value))"> Restar</button>
+        <button onclick="alert(dividir(10,2))"> Dividir</button>
+        <button onclick="document.getElementById('resul').innerHTML=dividir(12,4)">Dividir2</button>
+        <label id="resul">Resultado</label>
+
+        <h1>Calculadora</h1>
+        <h4>Ingrese dos numeros</h4>
+        <label  for=""> numero1</label>
+        <input id="nn1" type="number">
+        <label  for=""> numero2</label>
+        <input id="nn2" type="number">
+        <h5>Resultados</h5>
+        <h6>Suma</h6>
+        <button onclick="document.getElementById('rsuma').innerHTML=sumar2(parseInt( document.getElementById('nn1').value),parseInt( document.getElementById('nn2').value))">Suma</button>
+        <label id="rsuma">Resultado1</label>
+        <h6>Resta</h6>
+        <button onclick="document.getElementById('rresta').innerHTML=restar2(document.getElementById('nn1').value,document.getElementById('nn2').value)">Resta</button>
+        <label id="rresta">Resultado1</label>
+        <h6>Multiplicacion</h6>
+        <button onclick="document.getElementById('rmult').innerHTML=multiplicar(document.getElementById('nn1').value,document.getElementById('nn2').value)">Multiplicacion</button>
+        <label id="rmult">Resultado1</label>
+        <h6>Suma</h6>
+        <button onclick="document.getElementById('rdiv').innerHTML=dividir(document.getElementById('nn1').value,document.getElementById('nn2').value)">Division</button>
+        <label id="rdiv">Resultado1</label>
     </section>
     <footer></footer>
 </body>
